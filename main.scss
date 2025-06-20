@@ -1,0 +1,92 @@
+@use "sass/type-color.scss";
+$navy-950: #303b59;
+$navy-200: #cac9ff;
+$navy-50: #ecf2ff;
+
+$blue-800: #1125d6;
+$blue-50: #f3f4fd;
+
+$yellow-400: #ffb21e;
+$yellow-50: #fffbf4;
+
+$red-400: #ff5555;
+$red-50: #fff6f6;
+
+$green-500: #00bb8f;
+$green-50: #f2fcf9;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $blue-50;
+  @extend %flexer;
+  height: 100vh;
+}
+main {
+  display: flex;
+  height: 512px;
+  background-color: white;
+  width: 736px;
+  border-radius: 15px;
+  section {
+    width: 368px;
+  }
+}
+.result-card {
+  @extend %gradient2;
+}
+.summary-card {
+  background-color: white;
+  border-radius: 15px 0px 15px 0px;
+}
+.result-card,
+.summary-card {
+  @extend %flexer;
+  width: 368px;
+  height: 512px;
+  border-radius: 15px;
+  padding: 45px;
+}
+.inner-content {
+  height: 100%;
+  @extend %flexer;
+  text-align: center;
+  justify-content: space-between;
+  h1 {
+    @extend %textPreset-4;
+    color: $navy-200;
+  }
+  .grad-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    @extend %gradient1;
+  }
+  .grad-text {
+    height: 100%;
+    @extend %flexer;
+    @extend %textPreset-1;
+    color: white;
+    font-weight: bold;
+    .grad-text-small {
+      @extend %textPreset-5;
+      color: $navy-200;
+    }
+  }
+  .inner-text {
+    @extend %flexer;
+    h3 {
+      @extend %textPreset-3;
+      color: white;
+      margin-bottom: 16px;
+    }
+    p {
+      @extend %textPreset-5;
+      color: $navy-200;
+    }
+  }
+}

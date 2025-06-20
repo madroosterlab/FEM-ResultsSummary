@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+%textPreset-1 {
+  font-family: "Hanken Grotesk";
+  font-size: 72px;
+  line-height: 100%;
+}
+
+%textPreset-2 {
+  font-family: "Hanken Grotesk";
+  font-size: 56px;
+  line-height: 100%;
+}
+
+%textPreset-3 {
+  font-family: "Hanken Grotesk";
+  font-size: 32px;
+  line-height: 130%;
+}
+
+%textPreset-4 {
+  font-family: "Hanken Grotesk";
+  font-size: 24px;
+  line-height: 130%;
+}
+
+%textPreset-5 {
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+  line-height: 130%;
+}
+
+%textPreset-6 {
+  font-family: "Hanken Grotesk";
+  font-size: 16px;
+  line-height: 130px;
+}
+
+%flexer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+$navy-950: #303b59;
+$navy-900: #cac9ff;
+$navy-50: #ecf2ff;
+
+$blue-800: #1125d6;
+$blue-50: #f3f4fd;
+
+$yellow-400: #ffb21e;
+$yellow-50: #fffbf4;
+
+$red-400: #ff5555;
+$red-50: #fff6f6;
+
+$green-500: #00bb8f;
+$green-50: #f2fcf9;
+
+%gradient1 {
+  background-image: linear-gradient(#4d21c9, #2521c9);
+}
+%gradient2 {
+  background-image: linear-gradient(#7755ff, #2f2ce9);
+}
