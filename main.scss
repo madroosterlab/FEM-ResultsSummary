@@ -135,17 +135,46 @@ main {
 }
 .numbers {
   color: black;
+  font-weight: bold;
 }
 
 .numbers-in {
   color: $navy-950;
+  font-weight: normal;
 }
 .pill {
   padding: 16.5px 40px;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.pill,
+.pills {
+  width: 315px;
 }
 .pill,
 .numbers,
 .numbers-in {
   @extend %textPreset-5;
+}
+
+@media only screen and (max-width: 450px) {
+  main {
+    height: 100vh;
+    width: auto;
+    flex-direction: column;
+  }
+  .result-card,
+  .summary-card {
+    width: 100%;
+    padding: 24px;
+  }
+  .result-card {
+    border-radius: 0 0 15px 15px;
+  }
+  h3 {
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
+    line-height: 130%;
+  }
 }
