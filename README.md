@@ -27,11 +27,11 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot-1.png)
-![](./screenshot-2.png)
+![](./sccreenshot-2.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [madroosterlab.github.io/FEM-ResultsSummary/](https://madroosterlab.github.io/FEM-ResultsSummary/)
 
 ## My process
 
