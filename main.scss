@@ -90,3 +90,62 @@ main {
     }
   }
 }
+.inner-text-sum {
+  @extend %flexer;
+  justify-content: space-between;
+  height: 100%;
+  width: auto;
+  h2 {
+    margin-right: auto;
+  }
+  a {
+    @extend %flexer;
+    width: 288px;
+    height: 56px;
+    border-radius: 20px;
+    background-color: $navy-950;
+    color: white;
+    text-decoration: none;
+    @extend %textPreset-5;
+  }
+  a:hover {
+    @extend %gradient2;
+  }
+  .pills {
+    height: 288px;
+    @extend %flexer;
+    justify-content: space-around;
+  }
+}
+.reaction {
+  background-color: $red-50;
+  color: $red-400;
+}
+.memory {
+  background-color: $yellow-50;
+  color: $yellow-400;
+}
+.verbal {
+  background-color: $green-50;
+  color: $green-500;
+}
+.visual {
+  background-color: $blue-50;
+  color: $blue-800;
+}
+.numbers {
+  color: black;
+}
+
+.numbers-in {
+  color: $navy-950;
+}
+.pill {
+  padding: 16.5px 40px;
+  border-radius: 10px;
+}
+.pill,
+.numbers,
+.numbers-in {
+  @extend %textPreset-5;
+}

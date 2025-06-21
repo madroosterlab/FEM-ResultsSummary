@@ -17,14 +17,16 @@
   line-height: 130%;
 }
 
-.inner-content .grad-text .grad-text-small, .inner-content .inner-text p {
+.inner-content .grad-text .grad-text-small, .inner-content .inner-text p, .inner-text-sum a, .pill,
+.numbers,
+.numbers-in {
   font-family: "Hanken Grotesk";
   font-size: 18px;
   line-height: 130%;
 }
 
 body, .result-card,
-.summary-card, .inner-content, .inner-content .grad-text, .inner-content .inner-text {
+.summary-card, .inner-content, .inner-content .grad-text, .inner-content .inner-text, .inner-text-sum, .inner-text-sum a, .inner-text-sum .pills {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +37,7 @@ body, .result-card,
   background-image: linear-gradient(#4d21c9, #2521c9);
 }
 
-.result-card {
+.result-card, .inner-text-sum a:hover {
   background-image: linear-gradient(#7755ff, #2f2ce9);
 }
 
@@ -101,6 +103,60 @@ main section {
 }
 .inner-content .inner-text p {
   color: #cac9ff;
+}
+
+.inner-text-sum {
+  justify-content: space-between;
+  height: 100%;
+  width: auto;
+}
+.inner-text-sum h2 {
+  margin-right: auto;
+}
+.inner-text-sum a {
+  width: 288px;
+  height: 56px;
+  border-radius: 20px;
+  background-color: #303b59;
+  color: white;
+  text-decoration: none;
+}
+.inner-text-sum .pills {
+  height: 288px;
+  justify-content: space-around;
+}
+
+.reaction {
+  background-color: #fff6f6;
+  color: #ff5555;
+}
+
+.memory {
+  background-color: #fffbf4;
+  color: #ffb21e;
+}
+
+.verbal {
+  background-color: #f2fcf9;
+  color: #00bb8f;
+}
+
+.visual {
+  background-color: #f3f4fd;
+  color: #1125d6;
+}
+
+.numbers {
+  color: black;
+}
+
+.numbers-in {
+  color: #303b59;
+}
+
+.pill {
+  padding: 16.5px 40px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
